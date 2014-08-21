@@ -9,6 +9,7 @@ mode: selfcontained
 hitheme: tomorrow
 subtitle: Visual regression analysis of mtcars
 framework: io2012
+widgets: {rCharts: [libraries/nvd3]}
 ---
 
 ## Where did the idea come from
@@ -59,9 +60,10 @@ summary(fit)$coef
 * Using other models, reporting more statistics, better layout
 * Adding Graphical reporting (residual plots, ...)
 
-```{r results = 'asis', comment = NA, fig.height=100, fig.width=200, echo=FALSE}
-#library(rCharts)
-#rPlot(mpg ~ wt | cyl, data = mtcars, type = "point", color = "am")
+```{r results = 'asis', comment = NA, fig.height=100, fig.width=200, echo=FALSE, }
+library(rCharts)
+library(knitr)
+rPlot(mpg ~ wt | cyl, data = mtcars, type = "point", color = "am")
 ```
 
 
@@ -69,6 +71,9 @@ summary(fit)$coef
 
 ## Going to the App: happy exploring!
 
+<div align="center">
+<iframe 
+src="http://clijda.shinyapps.io/mtcars_reganal/" >
+  </iframe></div>
 
-http://clijda.shinyapps.io/mtcars_reganal/
 
