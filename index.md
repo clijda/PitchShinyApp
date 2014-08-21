@@ -9,6 +9,7 @@ mode: selfcontained
 hitheme: tomorrow
 subtitle: Visual regression analysis of mtcars
 framework: io2012
+widgets: {rCharts: [libraries/nvd3]}
 ---
 
 ## Where did the idea come from
@@ -74,13 +75,16 @@ summary(fit)$coef
 * Using other models, reporting more statistics, better layout
 * Adding Graphical reporting (residual plots, ...)
 
-
+<iframe src=' assets/fig/unnamed-chunk-2.html ' scrolling='yes' frameBorder='0' seamless class='rChart polycharts ' id=iframe- chart1efc3d5a28ec ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 
 ---
 
 ## Going to the App: happy exploring!
 
+<div align="center">
+<iframe 
+src="http://clijda.shinyapps.io/mtcars_reganal/" >
+  </iframe></div>
 
-http://clijda.shinyapps.io/mtcars_reganal/
 
